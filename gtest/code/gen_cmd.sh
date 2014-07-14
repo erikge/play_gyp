@@ -8,7 +8,7 @@
 
 # mac
 #gyp cmd_app/cmd_app.gyp --generator-output=../build --depth=. -Dlibrary=static_library -DOS=mac -f xcode
-gyp cmd_app.gyp --generator-output=../build --depth=. -Dgtest_library=static_library -DOS=mac -f ninja
+gyp cmd_app.gyp --generator-output=../build --depth=. -DOS=mac -f ninja
 # ninja生成工程文件后的使用方法
 #$ cd ../build
 ## Debug:

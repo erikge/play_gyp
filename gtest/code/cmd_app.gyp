@@ -1,6 +1,6 @@
 {
     'variables': {
-        #TODO
+        'E_gtest_library': 'static_library'
     },
     'includes': [
       '../gtest-1.7.0.gypi',
@@ -19,7 +19,7 @@
             'sample1.h'
         ],
         'dependencies': [
-            'gtest',
+            'E_gtest_target',
         ],
 
       },

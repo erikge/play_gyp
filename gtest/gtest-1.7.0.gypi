@@ -1,17 +1,12 @@
+# Usage: 
+# The user should define the following Variables:
+#   * E_gtest_library
+
 {
-    'variables': {
-        #TODO
-        # user-defined:
-        #               gtest_library
-    },
-    'includes': [
-    ],
-    'target_defaults': {
-    },
     'targets': [
       {
-        'target_name': 'gtest',
-        'type': '<(gtest_library)',
+        'target_name': 'E_gtest_target',
+        'type': '<(E_gtest_library)',
         'include_dirs': [
             'gtest-1.7.0',
             'gtest-1.7.0/include',
