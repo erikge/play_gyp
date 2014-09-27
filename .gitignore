@@ -25,7 +25,4 @@ bin
 gen
 armeabi*
 obj
-*.target.mk
-GypAndroid.mk
-build
 
