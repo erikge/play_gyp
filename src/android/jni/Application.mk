@@ -13,9 +13,8 @@
 
 
 APP_ABI := armeabi-v7a # x86
-
 APP_OPTIM := debug # release
 
-ROOT := $(call my-dir)/../..
+ROOT := $(call my-dir)
 
 APP_BUILD_SCRIPT := $(ROOT)/GypAndroid.mk
