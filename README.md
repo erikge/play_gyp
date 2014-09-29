@@ -23,5 +23,7 @@ android-make方式不能指定生成目录（GYP_GENERATOR_OUTPUT）。会生成
 生成so的方式为标准的ndk-build命令，通过gni目录下的Application.mk指定顶级GypAndroid.mk文件，生成的so位于libs目录下，命名规则为lib_<pkg-name>_<target-name>_gyp.so。其中pkg-name为顶级GypAndroid.mk到所生成target的相对目录。
 所以，为了简化，可以将运行gyp的目录，*.gyp文件所在的目录都放到jni下面。
 
+android或许没有ninja的方式。V8的工程中使用的是make-android的方式，生成的是Makefile，需要预先设置ANDROID_NDK_ROOT和ANDROID_TOOLCHAIN。这样解释了为什么WebRTC的工程中还自己写了许多Android.mk文件，WebRTC中gyp生成的ninja构建工程只是针对java代码用的；这个对于自动化有价值，对我来说增加复杂度了。
+
 
 
